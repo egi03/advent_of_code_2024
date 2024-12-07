@@ -22,7 +22,7 @@ def is_in_loop(inp, row, col):
 
 
 with open("input.txt") as f:
-    inp = [list(x) for x in f.read().splitlines()]
+    inp = [list(x.strip()) for x in f.readlines()]
 
 rows = len(inp)
 cols = len(inp[0])
