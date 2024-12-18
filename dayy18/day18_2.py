@@ -39,4 +39,3 @@ for i in range(1025, len(inp)):
         continue
     print(c, r)
     break
-        
