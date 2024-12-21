@@ -42,7 +42,7 @@ for r in range(rows):
         if grid[r][c] == '#':
             continue
         for nr, nc in [(r+2,c), (r+1,c+1), (r, c+2), (r-1, c+1)]:
-            if nr < 0 or nr >= rows or nc < 0 or nc >= cols or grid[nr][nc] == '#' :
+            if nr < 0 or nr >= rows or nc < 0 or nc >= cols or grid[nr][nc] == '#':
                 continue
         
             if abs(distances[nr][nc] - distances[r][c]) >= 102:
